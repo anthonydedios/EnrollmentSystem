@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D43CC863-53A5-43E5-819E-AE70BE212E37}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\MySQL\MySQL Connector Net 6.8.3\Assemblies\v2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ESAdmission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESAdmission.Designer.cs">
+      <DependentUpon>ESAdmission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESAssessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESAssessment.Designer.cs">
+      <DependentUpon>ESAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESFilemaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESFilemaintenance.Designer.cs">
+      <DependentUpon>ESFilemaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESInquiry.Designer.cs">
+      <DependentUpon>ESInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESMainMenu.Designer.cs">
+      <DependentUpon>ESMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESPayment.Designer.cs">
+      <DependentUpon>ESPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ESSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ESSettings.Designer.cs">
+      <DependentUpon>ESSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ESAdmission.resx">
+      <DependentUpon>ESAdmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESAssessment.resx">
+      <DependentUpon>ESAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESFilemaintenance.resx">
+      <DependentUpon>ESFilemaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESInquiry.resx">
+      <DependentUpon>ESInquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESMainMenu.resx">
+      <DependentUpon>ESMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESPayment.resx">
+      <DependentUpon>ESPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ESSettings.resx">
+      <DependentUpon>ESSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogPicF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogInPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogPicFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginBtnpic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-desktop-background-580272-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalMM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admission.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admission1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fmfinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assessmentbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inquirybg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inquiryfinalbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingbg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
