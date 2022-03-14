@@ -1,5 +1,5 @@
 # EnrollmentSystem
 
-Enrollment System written in C#
+STI Enrollment System written in C#
 
 Created way back 2018.
